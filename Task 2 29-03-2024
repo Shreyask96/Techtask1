@@ -16,8 +16,10 @@ where it will check for 1). Syntax 2). Rules 3). Translate from .java to
 ➢ If there is no violation then the .class file will be generated.
 ➢ .class is an intermediate code which is in byte code format which cannot 
 understood neither by human nor by machine.
-➢ .class file will be given as input for the interpreter which 1). Reads line by 
-line 2). Execute ( JVM ) 3). Translate .class file to binary language.
+➢ .class file will be given as input for the interpreter which 
+1). Reads line by line
+2). Execute ( JVM )
+3). Translate .class file to binary language.
 ➢ If we find any abnormal statements like 1/0 which is infinite , which is not 
 defined in java hence we get run time error called Arithmetic exception
 
