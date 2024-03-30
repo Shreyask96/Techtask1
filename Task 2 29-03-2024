@@ -1,0 +1,50 @@
+Java Architecture
+
+➢ We will write the program in edit plus / notepad. It is also called as source 
+code which is in human readable format.
+➢ To convert this human readable format into machine readable format, we 
+have to go to command prompt and perform 2 operations
+1. Javac ( java compiler)
+2. Java ( java interpreter)
+➢ Once after writing the program we have to save the file with the extension of 
+.java in below path
+c:/pgmfiles/java/ Jdk 1.8 / bin
+➢ Once after saving we have to give this .java file as an input to the compiler 
+where it will check for 1). Syntax 2). Rules 3). Translate from .java to 
+.class file
+➢ If there is any syntax or rules violation we get compile time error.
+➢ If there is no violation then the .class file will be generated.
+➢ .class is an intermediate code which is in byte code format which cannot 
+understood neither by human nor by machine.
+➢ .class file will be given as input for the interpreter which 1). Reads line by 
+line 2). Execute ( JVM ) 3). Translate .class file to binary language.
+➢ If we find any abnormal statements like 1/0 which is infinite , which is not 
+defined in java hence we get run time error called Arithmetic exception
+
+
+
+
+JVM Architecture
+
+➢ Whenever class loader loads the class all the static members will get 
+initialized in the static pool area.
+➢ JVM starts executing from main method in the program the first statement is 
+the object creation , equal operator will work from right to left.
+➢ New operator will create a random memory space in the heap memory. 
+Constructor will initialize all the non - static members into the heap memory 
+It will create random memory space into the heap memory
+It will initialize all the non – static members into the heap memory heap memorywhile creating the object itself we pass the arguments which will get initialized the constructor and from constructor it will get initialized to the 
+object variable.
+➢ Now in the main method the object address will be stored in the references 
+variable e1 and through that references variables we point the values. 
+
+It has 4 parts
+1. stack – It is used for execution which follows last in first out [ LIFO ] .
+2. Heap memory – It is used to store non – static members of the class. Whenever 
+we create an object at the instance non – static members will be stored in the heap 
+memory.
+3. static pool area - It is used to store static members of the class. Whenever class 
+loader loads the class at that instance static members will get initialized in the 
+static pool area.
+4. method area – It is used to store method body or definition . Irrespective of 
+static or non – static all the method bodies will be stored in method area
