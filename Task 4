@@ -1,0 +1,100 @@
+==> float r=2.5f % 2; 
+//0.5 --commented ----> how is this 0.5 comes as result?
+
+Explaination:- The expression 2.5f % 2 calculates the remainder when 2.5f is divided by 2. In Java, the modulus operator % gives the remainder after division.
+               In this case, 2.5f divided by 2 would give a quotient of 1 with a remainder of 0.5. 
+               Therefore, the value of r would indeed be 0.5.
+
+==>	float r=2.5f / 2;
+//1.25
+System.out.println(r);
+
+Explaination:- Here 2.5f is a floating-point number and 2 is an integer. When performing arithmetic operations involving different data types, 
+               Java automatically promotes the smaller data type to the larger data type before performing the operation. 
+               In this case, 2 is promoted to 2.0f a floating-point number before the division is performed.
+
+               So the expression 2.5f / 2 becomes 2.5f / 2.0f, dividing two floating-point numbers.
+               When you divide 2.5 by 2.0, you get 1.25 as the result.
+
+
+
+==> Write a program for the below mentioned scenario
+
+23 ==> 2+3=5
+54 ==> 5+4=9
+33 ==> 3+3=9
+
+19 ==> 1+9=10=1+0 // no need for this
+//55,65 - no need
+
+int r=14; //use only literals  (hardcoded values)
+
+
+class Addtwonumbers {
+    public static void main(String[] args) {
+
+//Declaring an array
+        int[] num = {23, 54, 33, 41, 34, 61, 52, 44};
+
+//Using foreach loop
+        for (int x : num) {
+            int sum = 0;
+
+            int first = x / 10;     // Will get the first digit
+            int second = x % 10;   // Will getthe second digit
+
+            sum = first + second;
+            
+          
+            System.out.println(num + "==>" + sum);
+        }
+    }
+}
+
+
+
+==> Compound operators 
+    c/=2, e%=2
+
+class CoumpoundOptrs
+{
+    public static void main(String args[])
+    {
+        int c = 10 ;
+        int e = 20 ;
+        c/=2 ;     // c = c/2 (10/2 =5)
+        System.out.println("The value of c is" +c); // 5
+
+        e%=2 ;    // e=e%2 (2%2 = 0)
+        System.out.println("The value of e is"+ e);
+    }
+}
+
+
+==> Decremental Operators
+
+public class DecrementalOperatorsExample {
+    public static void main(String[] args) {
+
+        // Example 1: Post-decrement operator (x--)
+        int x = 5;
+        int y = x--; // Post-decrement: First use the current value of x, then decrement x.
+
+        System.out.println("Value of y after post-decrement: " + y); // Output: 5
+       //System.out.println("Value of x after post-decrement: " + x); // Output: 4
+        System.out.println(x--); // Output: 4
+        System.out.println(x--); // Output: 3
+        
+        // Example 2: Pre-decrement operator (--x)
+        int a = 10;
+        int b = --a; // Pre-decrement: Decrement a first, then use the new value of a
+
+        System.out.println("Value of b after pre-decrement: " + b); // Output: 9
+        //System.out.println("Value of a after pre-decrement: " + a); // Output: 9
+        System.out.println(--a); //Output: 8
+        System.out.println(--a); //Output: 7
+
+    }
+}
+
+
