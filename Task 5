@@ -1,0 +1,51 @@
+Nested if condition :-
+
+public class NestedIf {
+    public static void main(String[] args) {
+        int x = 30;
+        int y = 10;
+        
+        if (x > y) {
+            System.out.println("x is greater than y");
+            if (x % 2 == 0) {
+                System.out.println("x is even");
+            } else {
+                System.out.println("x is odd");
+            }
+        } else if (x < y) {
+            System.out.println("x is less than y");
+        } else {
+            System.out.println("x is equal to y");
+        }
+    }
+}
+
+Code for running a for loop for infinite time :-
+
+Ex:- 1
+  public class InfiniteForLoop {
+      public static void main(String[] args) {
+
+         // Infinite loop
+         for (;;) {
+             System.out.println("This loop runs indefinitely");
+         }
+     }
+}
+
+
+Ex:- 2
+
+    public class InfiniteForLoop {
+      public static void main(String[] args) {
+
+         // Infinite loop
+          for (int i=0; i <= 10; i--) {
+             System.out.println("This loop runs indefinitely");
+         }
+     }
+}
+
+  In all these cases, the loop will continue indefinitely because the termination condition either doesn't 
+  exist, always evaluates to true, or never allows the loop control variable to reach a value that satisfies the termination condition. 
+  It's important to ensure that the termination condition of a loop is correctly defined to avoid unintended infinite loops.
