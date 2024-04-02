@@ -1,0 +1,33 @@
+1.psvm with args:
+
+class Sample{
+public static void main(String args[]){
+System.out.println("Hello World");
+}
+}
+
+o/p = Hello World
+
+2.psvm without args:
+
+class Demo{
+public static void main(){
+System.out.println("Hello World");
+}
+}
+
+o/p =
+Error: Main method not found in class com.Student, please define the main method as:
+   public static void main(String[] args) or a JavaFX application class must extend javafx.application.Application
+
+
+3.psm(args):
+
+class Sample1 {
+	  public static main(String[] args) {
+System.out.println("Hello World");
+}
+}
+
+Error: Main method not found in class com.Student, please define the main method as:
+   public static void main(String[] args) or a JavaFX application class must extend javafx.application.Application
