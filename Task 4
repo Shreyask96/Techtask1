@@ -63,10 +63,20 @@ class CoumpoundOptrs
         int c = 10 ;
         int e = 20 ;
         c/=2 ;     // c = c/2 (10/2 =5)
-        System.out.println("The value of c is" +c); // 5
+        System.out.println("Value => " + c); // 5
 
-        e%=2 ;    // e=e%2 (2%2 = 0)
-        System.out.println("The value of e is"+ e);
+        e%=2 ;    // e=e%2 (2%2 =0)
+        System.out.println("Value => " + e);
+
+
+       int a= 2;
+       int b= 6;
+
+       a*=3;   // a=a*3 (2*3=6)
+       System.out.println("Value => " + a)
+
+       b/=2;   //b=b/2  (6/2=3)
+       System.out.println("Value => " + b)
     }
 }
 
