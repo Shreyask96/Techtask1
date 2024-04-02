@@ -1,11 +1,11 @@
-==> float r=2.5f % 2; 
+1 ==> float r=2.5f % 2; 
 //0.5 --commented ----> how is this 0.5 comes as result?
 
 Explaination:- The expression 2.5f % 2 calculates the remainder when 2.5f is divided by 2. In Java, the modulus operator % gives the remainder after division.
                In this case, 2.5f divided by 2 would give a quotient of 1 with a remainder of 0.5. 
                Therefore, the value of r would indeed be 0.5.
 
-==>	float r=2.5f / 2;
+2 ==>	float r=2.5f / 2;
 //1.25
 System.out.println(r);
 
