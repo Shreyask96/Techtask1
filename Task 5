@@ -49,3 +49,34 @@ Ex:- 2
   In all these cases, the loop will continue indefinitely because the termination condition either doesn't 
   exist, always evaluates to true, or never allows the loop control variable to reach a value that satisfies the termination condition. 
   It's important to ensure that the termination condition of a loop is correctly defined to avoid unintended infinite loops.
+
+
+
+==> Finding Prime Numbers upto n. n is an integer:-
+
+public class RangeofPrimenumbers {
+	public static void main(String[] args) {
+		int n=3;
+		int nth=8;
+		int count=0;
+		
+		for (int j = n; j < 100; j++) {
+			int no=j;
+			boolean flag=true;
+			
+			for (int i = 2; i < no; i++) {
+				if(no%i==0){
+					flag=false;
+					break;
+				}
+				
+			}
+			if(flag==true){
+				count++;
+				if(count==nth){
+					System.out.println(no);
+				}
+			}
+		}
+	}
+}
