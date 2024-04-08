@@ -1,0 +1,33 @@
+==> Purpose of making Constructor as Private
+
+If you have a class that contains only static members and methods, it's common to make the constructor private to prevent instantiation.
+This makes it clear that the class is not meant to be instantiated and used as an object.
+
+One common use case is in implementing the Singleton design pattern. By making the constructor private,you prevent outside classes from directly instantiating the class. 
+Instead the class provides a static method to access the single instance of itself. 
+This ensures that only one instance of the class can exist.
+
+
+
+==> Can i make constr as final - impact
+
+In Java, constructors cannot be declared with the final. The final keyword is used to prevent a method, class, or variable from being overridden or re-assigned.
+However constructors themselves don't participate in inheritance or overriding, so applying final to them doesn't make sense in Java.
+However you can achieve similar effects by making the entire class final. When a class is declared as final, it means that it cannot be subclassed,and
+therefore, its constructors cannot be overridden. 
+
+
+
+==> What happens if you keep int nearby(as return type) in constructor
+
+Constructors in Java do not have return types, not even void. Their purpose is to initialize objects of the class they belong to.
+So attempting to specify a return type such as int in a constructor definition will lead to a compilation error.
+
+public class MyClass {
+    private int myInt;
+    
+    public int MyClass(int initialValue) {                     // This is incorrect syntax for a constructor
+        this.myInt = initialValue;
+        return 0;                                                    // Incorrect attempt to return an int
+    }
+}
