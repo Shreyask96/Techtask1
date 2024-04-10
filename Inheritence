@@ -5,3 +5,123 @@ If you attempt to declare a method in a child class with a more restrictive acce
 it will result in a compilation error.
 To resolve this issue, you should keep the access modifier of the method in the child class the same as, or less restrictive than, 
 the access modifier of the method in the parent class.
+
+
+==> Calc, scientific calc, programmer calc - implement complete inheritance(overriding,uniq methd...)
+
+Calculators
+
+     Addition() {}
+     Substraction() {}
+     Multification() {}
+     Division() {}
+     Summation() {}
+     Buttons() {}
+
+
+Standard Calulator
+     Addition() {}
+     Substraction() {}
+     Multification() {}
+     Division() {}
+     Summation() {}
+     Buttons() {}
+     Percentage() {} 
+     Rooting() {} 
+
+Scientific Calulator
+
+     Addition() {} 
+     Substraction() {}
+     Multification() {}
+     Division() {}
+     Summation() {}
+     Buttons() {}
+     Rooting() {}
+     Expression() {}
+     Trigonometry() {} 
+     Function() {} 
+
+Programmer Calulator
+
+     Addition() {}
+     Substraction() {}
+     Multification() {}
+     Division() {}
+     Summation() {}
+     Buttons() {}
+     Alphabets() {}
+     Percentage() {}
+     Converter() {}
+     Bitwise() {}
+     Bitshift() {} 
+
+
+
+
+==> Radio, Tv, Dvd Player - identify the Apt parent class and implement inheritance
+
+Electronics
+
+    brands() {}
+    model() {}
+    audio() {}
+    controlButtons() {}
+
+
+Radio 
+
+    brands() {}
+    model() {}
+    audio() {}
+    recording() {}
+    controlButtons() {}
+    audioDisc() {} 
+
+
+TV  
+
+    brands() {}
+    model() {}
+    audio() {}
+    controlButtons() {}
+    video() {} 
+    recording() {} 
+
+
+DVD Player
+    
+    brands() {}
+    model() {}
+    audio() {}
+    controlButtons() {}
+    videoDisc() {} 
+    mic() {} 
+
+
+
+==> Admin, Manager, Finance - identify the parent class and implement inheritance
+
+Admin
+
+     login() {}
+     logout() {} 
+     Registration() {} 
+     
+   
+Manager  
+
+     login() {} 
+     logout() {} 
+     manageEmployees() {} 
+   
+  
+Finance  
+
+     login() {}
+     logout() {}
+     accounts() {}
+     salary() {} 
+     bankTransactions() {}
+
+
