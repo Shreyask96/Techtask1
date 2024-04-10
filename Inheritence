@@ -1,0 +1,7 @@
+==> what if my child class has lesser access modifier
+	   // private void walk()
+
+If you attempt to declare a method in a child class with a more restrictive access modifier than that of the method in the parent class, 
+it will result in a compilation error.
+To resolve this issue, you should keep the access modifier of the method in the child class the same as, or less restrictive than, 
+the access modifier of the method in the parent class.
